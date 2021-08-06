@@ -42,16 +42,16 @@ class Namespace {
                     if (typeof parent[parts[i]] === 'undefined') {
                         if(i === parts.length - 1) { 
                             parent[parts[i]] = data; 
-                            continue; 
-                        }
+                            continue;
+			parent[parts[i]] = {};
+                        } else {//TODO
+                            if(i === parts.length - 1) {
+                                parent[parts[i]] = data; 
+                                continue; 
+                            }
+                        } //TODO
                         parent[parts[i]] = {};
-                    } else {//TODO
-                        if(i === parts.length - 1) { 
-                            parent[parts[i]] = data; 
-                            continue; 
-                        }
-                        parent[parts[i]] = {};
-                    } //TODO
+                    }
                     parent = parent[parts[i]];
                 }
             }
