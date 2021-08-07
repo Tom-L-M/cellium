@@ -51,23 +51,10 @@ Cellium.extend(foo, [
 */
 ``` 
 
-## Getting a namespace size, depth and name
-
-The 'size' method returns the actual length of the namespace, but not counting itself nor the 'name' property.
-
-The 'depth' method returns the 'distance' between the root Namespace object and it's innermost property or method (inclusive).
-
-Both the 'size' and 'name' properties are hidden and immutable, and can only be acessed by direct calls (they cannot be counted by any iteration method).
-
-``` javascript
-let a = foo.name; // a = 'foo'
-let b = foo.size(); // b = 4
-let c = Cellium.depth(foo); // c = 3
-```
-
-
 ## More Information   
 You can check the documentation [here](https://github.com/Tom-L-M/cellium/tree/main/documentation) for the complete information about the package.
+
+Find the package in NPM [here](https://www.npmjs.com/package/cellium/), or test it at [NPM RunKit](https://npm.runkit.com/cellium).
 
 ## Support   
 Please, contact this email: t.luchesi.machado@gmail.com for support.
