@@ -1,58 +1,73 @@
-# Cellium 
+# Cellium  
 
-Cellium is a simple namespace implementation package.  
+#### Cellium is a simple namespace implementation package.
 
 [![npm status](https://img.shields.io/npm/v/cellium)](https://www.npmjs.org/package/cellium)
 
 ## Installation
-
-```bash
+``` bash
 $ npm install cellium
 ```
 
-You can also try it at [NPM RunKit](https://npm.runkit.com/cellium) before installing.
+## Starting
+The Cellium module can be required as a regular NPM package, and must be assigned to an identifier (of any type).
 
-## Usage
-
-```javascript
-// require it for use
+``` javascript
 const Cellium = require('cellium');
+````
 
-// creates a new namespace
+## Creating a namespace
+The namespaces are created as objects, labeled with ```Namespace``` class tag.  
+You can create a namespace using:
+``` javascript
 let foo = Cellium.create('foo');
+// console.log(foo) will result in:
+// Namespace {}
+````
 
-// adds properties to that namespace
-// (you can omit the 'data' part to initialize the property with '{}' as value)
+## Extending namespaces
+It is possible to extend the namespaces by adding new key-value properties to it:
+``` javascript
 Cellium.extend(foo, [
-    {path: 'd', data: [1, 2, 3]},
-    {path: 'd2.sub.subsub', data: 'abc'},
-    {path: 'd3', data: function(a,b) { return a + b}}
+  {path: 'propA', data: [1, 2, 3]},
+  {path: 'propB', data: 'abc'},
+  {path: 'propC.propC1', data: (a, b) => a + b},
+  {path: 'propC.propC2', data: function(a, b) {return a - b}},
+  {path: 'propD', data: {}}
 ]);
-/* expect foo to be: ​
-  ​{     
-      ​d: [1, 2, 3],
-      d2: {
-            sub: {
-                   subsub: "abc",
-            }
-      },
-      d3: function(a, b) { return a + b; }
-  ​}   
+
+/* Expect foo to be:
+  
+  Namespace {
+    propA: [1, 2, 3],
+    propB: 'abc',
+    propC: {
+      propC1: (a, b) => a + b,
+      propC2: function(a, b) { return a - b}
+    },
+    propD: {}
+  }
+
 */
+``` 
 
-// returns the amount of keys directly in the namespace root level
-foo.size(); // expect 3
+## Getting a namespace size, depth and name
 
-// returns the name of the defined namespace
-foo.name; // expect 'foo'
+The 'size' method returns the actual length of the namespace, but not counting itself nor the 'name' property.
 
-// returns the number of keys from the 
-// namespace root to the deepest-leveled property
-Cellium.depth(foo); // expect 4
+The 'depth' method returns the 'distance' between the root Namespace object and it's innermost property or method (inclusive).
+
+Both the 'size' and 'name' properties are hidden and immutable, and can only be acessed by direct calls (they cannot be counted by any iteration method).
+
+``` javascript
+let a = foo.name; // a = 'foo'
+let b = foo.size(); // b = 4
+let c = Cellium.depth(foo); // c = 3
 ```
 
+
 ## More Information
-You can check the documentation [here](https://github.com/Tom-L-M/cellium/blob/main/DOCUMENTATION.md) for the complete information.
+You can check the documentation [here](https://github.com/Tom-L-M/cellium/tree/main/documentation) for the complete information.
 
 ## Contributing
 If you have an idea on how to improve this package, and want to share it, 
@@ -62,5 +77,5 @@ just make a pull request on [GitHub](https://github.com/Tom-L-M/cellium).
 You can also use this email: t.luchesi.machado@gmail.com
 
 ## License
-MIT-Licenced.  
-See LICENCE file for details.
+MIT-Licensed.  
+See [LICENSE](https://github.com/Tom-L-M/cellium/blob/main/LICENSE) for details.
