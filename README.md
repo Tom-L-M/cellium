@@ -10,6 +10,8 @@ Cellium is a simple namespace implementation package.
 $ npm install cellium
 ```
 
+You can also try it at [NPM RunKit](https://npm.runkit.com/cellium) before installing.
+
 ## Usage
 
 ```javascript
@@ -50,7 +52,7 @@ Cellium.depth(foo); // expect 4
 ```
 
 ## More Information
-You can check the documentation [here](https://github.com/Tom-L-M/cellium) for the complete information.
+You can check the documentation [here](https://github.com/Tom-L-M/cellium/blob/main/DOCUMENTATION.md) for the complete information.
 
 ## Contributing
 If you have an idea on how to improve this package, and want to share it, 
