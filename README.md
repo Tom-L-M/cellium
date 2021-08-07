@@ -66,15 +66,16 @@ let c = Cellium.depth(foo); // c = 3
 ```
 
 
-## More Information
-You can check the documentation [here](https://github.com/Tom-L-M/cellium/tree/main/documentation) for the complete information.
+## More Information   
+You can check the documentation [here](https://github.com/Tom-L-M/cellium/tree/main/documentation) for the complete information about the package.
+
+## Support   
+Please, contact this email: t.luchesi.machado@gmail.com for support.
 
 ## Contributing
 If you have an idea on how to improve this package, and want to share it, 
 just make a pull request on [GitHub](https://github.com/Tom-L-M/cellium).
 (For major changes, please open an issue first.) 
-
-You can also use this email: t.luchesi.machado@gmail.com
 
 ## License
 MIT-Licensed.  
