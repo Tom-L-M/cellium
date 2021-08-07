@@ -1,14 +1,21 @@
 {
   "name": "cellium",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package for simple namespace implementation.",
   "main": "cellium.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "namespace"
+    "namespace",
+    "node.js",
+    "node",
+    "object"
   ],
-  "author": "tluch",
-  "license": "ISC"
+  "author": {
+    "name": "Tomás Luchesi",
+    "email": "t.luchesi.machado@gmail.com",
+    "url": "https://github.com/Tom-L-M/cellium"
+  },
+  "license": "MIT"
 }
