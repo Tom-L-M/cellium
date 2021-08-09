@@ -3,6 +3,7 @@
 #### Cellium is a simple namespace implementation package.
 
 [![npm status](https://img.shields.io/npm/v/cellium)](https://www.npmjs.org/package/cellium)
+
 [![Install Size](https://packagephobia.com/badge?p=cellium@1.0.2)](https://packagephobia.com/result?p=cellium@1.0.2)
 
 ## Installation
@@ -38,7 +39,6 @@ Cellium.extend(foo, [
 ]);
 
 /* Expect foo to be:
-  
   Namespace {
     propA: [1, 2, 3],
     propB: 'abc',
@@ -48,7 +48,6 @@ Cellium.extend(foo, [
     },
     propD: {}
   }
-
 */
 ``` 
 
@@ -57,13 +56,10 @@ You can check the documentation [here](https://github.com/Tom-L-M/cellium/tree/m
 
 Find the package in NPM [here](https://www.npmjs.com/package/cellium/), or test it at [NPM RunKit](https://npm.runkit.com/cellium).
 
-## Support   
-Please, contact this email: t.luchesi.machado@gmail.com for support.
-
-## Contributing
-If you have an idea on how to improve this package, and want to share it, 
+## Support and Contributions   
+To report bugs and problems, or if you have an idea on how to improve this package, and want to share it, 
 just make a pull request on [GitHub](https://github.com/Tom-L-M/cellium).
-(For major changes, please open an issue first.) 
+(For major changes, please open an issue first.)
 
 ## License
 MIT-Licensed.  
