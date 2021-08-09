@@ -1,3 +1,6 @@
+
+# OUTDATED
+
 # Cellium  
 
 #### Cellium é um pacote para implementação de uma versão simplificada de *namespaces*.
