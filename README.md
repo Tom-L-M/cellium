@@ -3,6 +3,7 @@
 #### Cellium is a simple namespace implementation package.
 
 [![npm status](https://img.shields.io/npm/v/cellium)](https://www.npmjs.org/package/cellium)
+[![Install Size](https://packagephobia.com/badge?p=cellium@1.0.2)](https://packagephobia.com/result?p=cellium@1.0.2)
 
 ## Installation
 ``` bash
