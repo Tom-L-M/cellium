@@ -1,5 +1,5 @@
 
-# OUTDATED
+# THIS FILE IS OUTDATED, SEE /documentation/EN-US.md
 
 # Cellium  
 
